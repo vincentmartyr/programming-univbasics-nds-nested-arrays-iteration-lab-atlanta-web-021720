@@ -57,12 +57,19 @@ total = 0
 row_index = 0
   while row_index < src.count do
 
+<<<<<<< HEAD
     if src[row_index][0].even? == true && src[row_index][1].even? == true
        total += src[row_index][0] + src[row_index][1]
     end
 
    
     row_index += 1
+=======
+    if row_index % 2 == 0
+       total += src[row_index][0]
+      row_index += 1
+    end
+>>>>>>> 228c0414e22c5a2537efd9d5737c52bcca6bfb19
 end
   total
 end
